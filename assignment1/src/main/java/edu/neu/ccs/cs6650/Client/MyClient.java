@@ -10,28 +10,31 @@ import javax.ws.rs.core.Response;
 
 
 public class MyClient {
+  private WebTarget webTarget;
 
-    private String url;
-    private WebTarget webTarget;
+  // for testing
+  private String url;
 
-    public MyClient(String url) {
-        this.url = url;
-        Client client = ClientBuilder.newClient();
-        this.webTarget = client.target(url).path("/webapi/myresource");
+  public MyClient(String url) { // WebTarget webTarget
 //        this.webTarget = webTarget;
-    }
 
-    public Response postText(Object requestEntity) throws ClientErrorException {
-        return webTarget.request(MediaType.TEXT_PLAIN)
-            .post(Entity.entity(requestEntity, MediaType.TEXT_PLAIN));
-    }
+    // for testing
+    this.url = url;
+    Client client = ClientBuilder.newClient();
+    this.webTarget = client.target(url).path("/webapi/myresource");
+  }
 
-    public String getStatus() throws ClientErrorException {
-        WebTarget resource = webTarget;
-        return resource.request(MediaType.TEXT_PLAIN).get(String.class);
-    }
+  public Response postText(Object requestEntity) throws ClientErrorException {
+    return webTarget.request(MediaType.TEXT_PLAIN)
+        .post(Entity.entity(requestEntity, MediaType.TEXT_PLAIN));
+  }
 
-    // To test get and post from client to server for both localhost and AWS server.
+  public String getStatus() throws ClientErrorException {
+    WebTarget resource = webTarget;
+    return resource.request(MediaType.TEXT_PLAIN).get(String.class);
+  }
+
+  // To test get and post from client to server for both localhost and AWS server.
 //    public static void main(String[] argv) {
 //        MyClient client = new MyClient("http://54.237.220.154:8080/assignment1");
 //

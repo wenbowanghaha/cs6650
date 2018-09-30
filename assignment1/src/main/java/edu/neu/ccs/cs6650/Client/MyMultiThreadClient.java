@@ -2,6 +2,7 @@ package edu.neu.ccs.cs6650.Client;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -109,17 +110,19 @@ public class MyMultiThreadClient extends Thread {
     System.out.println("=====================================");
 
     // now calculate the required measurements
-    calculateMeasurements(this.measurements);
+    double wallTime = (float)(end - start) / 1000.;
+    calculateMeasurements(this.measurements, wallTime);
 
     // print out wall time
-    System.out.println("Test Wall time: " + (float)(end - start) / 1000. + " seconds");
+    System.out.println("Test Wall time: " + wallTime + " seconds");
   }
 
   /**
    * To calculate the required measurements.
    * @param measurements the collected raw measurements as input.
+   * @param wallTime the total wallTime.
    */
-  private void calculateMeasurements(List<Measurement> measurements) {
+  private void calculateMeasurements(List<Measurement> measurements, double wallTime) {
     int totalRequests = 0;
     int totalSuccessRequests = 0;
     long latencySum = 0L;
@@ -133,15 +136,48 @@ public class MyMultiThreadClient extends Thread {
     }
 
     // print out some metrics
+    // total request and successful requests count
     System.out.println("Total number of request sent: " + totalRequests);
-    System.out.println("Total number of successful reponses: " + totalSuccessRequests);
+    System.out.println("Total number of successful responses: " + totalSuccessRequests);
 
+    // throughput
+    double throughput = (float)totalRequests / wallTime;
+    System.out.println("Overall throughput across all phases: " + throughput);
 
+    // mean latency
+    Long[] allLatencyArray = new Long[allLatencies.size()];
+    for (int i = 0; i < allLatencies.size(); i++) {
+      allLatencyArray[i] = allLatencies.get(i);
+    }
+
+    double meanLatency = (float)latencySum / allLatencies.size();
+    System.out.println("Mean Latency: " + meanLatency);
+
+    // median latency
+    Arrays.sort(allLatencyArray);
+    double medianLatency;
+    if (allLatencies.size() % 2 == 0) {
+      medianLatency = allLatencyArray[allLatencies.size() / 2];
+    } else {
+      medianLatency = (allLatencyArray[allLatencies.size() / 2 - 1]
+          + allLatencyArray[allLatencies.size() / 2]) / 2.;
+    }
+
+    System.out.println("Median Latency: " + medianLatency);
+
+    // 99 and 95 percentiles
+    long percentile95 = allLatencyArray[(int) (0.95 * allLatencies.size() - 1)];
+    long percentile99 = allLatencyArray[(int) (0.99 * allLatencies.size() - 1)];
+
+    System.out.println("95 percentile latency is: " + percentile95 + " milliseconds");
+    System.out.println("99 percentile latency is: " + percentile99 + " milliseconds");
+
+    System.out.println("=====================================");
   }
 
   // Test the multi-thread client
   public static void main(String[] args) {
-    int thread = 100;
+    int thread = 20;
     int iterations = 100;
     String address = "54.237.220.154";
     String port = "8080";

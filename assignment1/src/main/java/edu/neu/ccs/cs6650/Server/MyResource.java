@@ -22,12 +22,12 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Hello CS6650!";
+        return "What's up! Welcome to CS6650 BSDS";
     }
 
     @POST
     @Consumes(MediaType.TEXT_PLAIN)
     public int postText(String content) {
-        return content.length();
+        return (content.length());
     }
 }

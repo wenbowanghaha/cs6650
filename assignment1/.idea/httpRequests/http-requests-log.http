@@ -1,0 +1,134 @@
+GET http://localhost:8080/myresource
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/myresource
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/myresource
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/myresource
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/myresource
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T111553.404.html
+
+###
+
+GET http://localhost:8080/myresource
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T111547.404.html
+
+###
+
+GET http://localhost:8080/rest/resource
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T111507.404.html
+
+###
+
+GET http://localhost:8080/rest/resource
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T111428.404.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T111408.404.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T111403.404.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T111400.404.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+###
+

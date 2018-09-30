@@ -13,7 +13,10 @@ public class Measurement {
   private int totalRequests;
   private int totalSuccessRequest;
 
-  public Measurement(List<Long> latencies, int totalRequests, int totalSuccessRequest) {
+  /**
+   * Creates a new Measurement wrapper class object with default values.
+   */
+  public Measurement() {
     this.latencies = new ArrayList<>();
     this.totalRequests = 0;
     this.totalSuccessRequest = 0;

@@ -13,15 +13,15 @@ public class MyClient {
   private WebTarget webTarget;
 
   // for testing
-  private String url;
+//  private String url;
 
-  public MyClient(String url) { // WebTarget webTarget
-//        this.webTarget = webTarget;
+  public MyClient(WebTarget webTarget) { //  String url
+        this.webTarget = webTarget;
 
     // for testing
-    this.url = url;
-    Client client = ClientBuilder.newClient();
-    this.webTarget = client.target(url).path("/webapi/myresource");
+//    this.url = url;
+//    Client client = ClientBuilder.newClient();
+//    this.webTarget = client.target(url).path("/webapi/myresource");
   }
 
   public Response postText(Object requestEntity) throws ClientErrorException {

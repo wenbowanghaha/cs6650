@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="321460b1-f27d-465a-828d-aee414af660e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/Measurement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MySingleThreadClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/Measurement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Server/MyResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Server/MyResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/neu/ccs/cs6650/Client/MyClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/neu/ccs/cs6650/Client/MyClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyMultiThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyMultiThreadClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MySingleThreadClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MySingleThreadClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -35,14 +33,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="http" value="3" />
-          <entry key="java" value="5" />
+          <entry key="java" value="6" />
           <entry key="jsp" value="4" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
           <entry key="JSP" value="4" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="4" />
@@ -51,14 +49,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="http" value="13" />
-          <entry key="java" value="3352" />
+          <entry key="java" value="7672" />
           <entry key="jsp" value="218" />
           <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3352" />
+          <entry key="JAVA" value="7672" />
           <entry key="JSP" value="218" />
           <entry key="Scratch" value="13" />
           <entry key="XML" value="17" />
@@ -91,10 +89,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+            <state relative-caret-position="418">
+              <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#352#366#0" />
+                <element signature="e#488#502#0" />
                 <element signature="e#1001#1081#0" />
               </folding>
             </state>
@@ -104,20 +104,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MySingleThreadClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1166">
-              <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+            <state relative-caret-position="1430">
+              <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#352#370#0" />
+                <element signature="e#1149#1163#0" />
+                <element signature="e#2668#2675#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/Measurement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="462">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#677#678#0" expanded="true" />
@@ -132,6 +135,18 @@
                 <element signature="e#1336#1337#0" expanded="true" />
                 <element signature="e#1445#1446#0" expanded="true" />
                 <element signature="e#1481#1482#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyMultiThreadClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MySingleThreadClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/Measurement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyMultiThreadClient.java" />
       </list>
     </option>
   </component>
@@ -548,7 +564,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538335398793" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538345314879" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -653,9 +669,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MySingleThreadClient">
+  <component name="RunManager" selected="Application.MyMultiThreadClient">
     <configuration name="MyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.neu.ccs.cs6650.Client.MyClient" />
+      <module name="assignment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.neu.ccs.cs6650.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMultiThreadClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.neu.ccs.cs6650.Client.MyMultiThreadClient" />
       <module name="assignment1" />
       <extension name="coverage">
         <pattern>
@@ -819,9 +848,11 @@
       <item itemvalue="Tomcat Server.Tomcat 9.0.12" />
       <item itemvalue="Application.MyClient" />
       <item itemvalue="Application.MySingleThreadClient" />
+      <item itemvalue="Application.MyMultiThreadClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyMultiThreadClient" />
         <item itemvalue="Application.MySingleThreadClient" />
         <item itemvalue="Application.MyClient" />
       </list>
@@ -838,12 +869,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538283722475</updated>
       <workItem from="1538283723843" duration="1859000" />
-      <workItem from="1538285836772" duration="13968000" />
+      <workItem from="1538285836772" duration="23183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15827000" />
+    <option name="totallyTimeSpent" value="25042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -858,19 +889,19 @@
     <frame x="39" y="23" width="1641" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16197623" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4964029" visible="true" weight="0.16197623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.50359714" side_tool="true" weight="0.16197623" />
       <window_info anchor="bottom" id="Application Servers" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.53475934" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7026738" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -952,10 +983,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+        <state relative-caret-position="418">
+          <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#352#366#0" />
+            <element signature="e#488#502#0" />
             <element signature="e#1001#1081#0" />
           </folding>
         </state>
@@ -963,18 +996,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MySingleThreadClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+        <state relative-caret-position="1430">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#352#370#0" />
+            <element signature="e#1149#1163#0" />
+            <element signature="e#2668#2675#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/Measurement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="462">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#677#678#0" expanded="true" />
@@ -989,6 +1025,16 @@
             <element signature="e#1336#1337#0" expanded="true" />
             <element signature="e#1445#1446#0" expanded="true" />
             <element signature="e#1481#1482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/neu/ccs/cs6650/Client/MyMultiThreadClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

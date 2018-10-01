@@ -29,9 +29,9 @@ public class MyClient {
         .post(Entity.entity(requestEntity, MediaType.TEXT_PLAIN));
   }
 
-  public String getStatus() throws ClientErrorException {
+  public int getStatus() throws ClientErrorException {
     WebTarget resource = webTarget;
-    return resource.request(MediaType.TEXT_PLAIN).get(String.class);
+    return resource.request(MediaType.TEXT_PLAIN).get().getStatus();
   }
 
   // To test get and post from client to server for both localhost and AWS server.

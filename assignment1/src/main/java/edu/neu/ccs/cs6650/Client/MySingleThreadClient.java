@@ -46,23 +46,25 @@ public class MySingleThreadClient extends Thread {
 
       // POST request
       long start = System.currentTimeMillis();
-      Response response = client.postText("hello world!");
+      Response response = client.postText("\"hello world!\"");
       long end = System.currentTimeMillis();
       this.measurement.addLatency(end - start);
       this.measurement.addRequest();
-      if (response.readEntity(Integer.class) == 12) {
+//      System.out.println(response.getStatus());
+      if (response.getStatus() == 200) {
         this.measurement.addSuccessRequest();
       }
       response.close();
 
       // GET request
       start = System.currentTimeMillis();
-      String result = client.getStatus();
+      int result = client.getStatus();
       end = System.currentTimeMillis();
       this.measurement.addLatency(end - start);
       this.measurement.addRequest();
-      String rightAnswer = "What's up! Welcome to CS6650 BSDS";
-      if (result.equals(rightAnswer)) {
+//      String rightAnswer = "What's up! Welcome to CS6650 BSDS";
+//      System.out.println(result);
+      if (result == 200) {
         this.measurement.addSuccessRequest();
       }
     }

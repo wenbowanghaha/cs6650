@@ -18,7 +18,8 @@ import javax.ws.rs.client.WebTarget;
  */
 public class MyMultiThreadClient extends Thread {
   // resource path
-  public static final String PATH = "assignment1/webapi/myresource";
+//  public static final String PATH = "assignment1/webapi/myresource";
+  public static final String PATH = "LambdaDeploy/lambda";
 
   private String url;
   private int thread;
@@ -179,8 +180,9 @@ public class MyMultiThreadClient extends Thread {
   public static void main(String[] args) {
     int thread = 20;
     int iterations = 100;
-    String address = "54.237.220.154";
-    String port = "8080";
+//    String address = "54.164.227.201";
+//    String port = "8080";
+    String url = "https://qgp1vfe34h.execute-api.us-east-1.amazonaws.com";
 
 //    if (args.length != 4) {
 //      System.out.println("Invalid command line arguments input, please input:");
@@ -195,10 +197,11 @@ public class MyMultiThreadClient extends Thread {
 
     System.out.println("Threads number: " + thread);
     System.out.println("Iterations number: " + iterations);
-    System.out.println("IP Address: " + address);
-    System.out.println("Port: " + port + "\n\n");
+//    System.out.println("IP Address: " + address);
+//    System.out.println("Port: " + port + "\n\n");
 
-    String url = "http://" + address + ":" + port;
+//    String url = "http://" + address + ":" + port;
+    System.out.println("URL: " + url);
     List<Measurement> measurements = new ArrayList<>();
     MyMultiThreadClient multi = new MyMultiThreadClient(url, thread, iterations, measurements);
 
